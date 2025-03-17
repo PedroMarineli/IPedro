@@ -24,4 +24,98 @@ public class Adress {
     private Broadcast broadcast;
     private BroadcastBin broadcastBin;
     private Cidr cidr;
+
+
+    public Adress() {
+        Ip ip = new Ip(255, 255, 255, 255);
+        setIp(ip);
+    }
+
+    public Ip getIp() {
+        return ip;
+    }
+
+    public void setIp(Ip ip) {
+        this.ip = ip;
+    }
+
+    public IpBin getIpBin() {
+        return ipBin;
+    }
+
+    public void setIpBin(IpBin ipBin) {
+        this.ipBin = ipBin;
+    }
+
+    public Mask getMask() {
+        return mask;
+    }
+
+    public void setMask(Mask mask) {
+        this.mask = mask;
+    }
+
+    public MaskBin getMaskBin() {
+        return maskBin;
+    }
+
+    public void setMaskBin(MaskBin maskBin) {
+        this.maskBin = maskBin;
+    }
+
+    public InMaskBin getInMaskbin() {
+        return inMaskbin;
+    }
+
+    public void setInMaskbin(InMaskBin inMaskbin) {
+        this.inMaskbin = inMaskbin;
+    }
+
+    public Id getId() {
+        return id;
+    }
+
+    public void setId(Id id) {
+        this.id = id;
+    }
+
+    public IdBin getIdBin() {
+        return idBin;
+    }
+
+    public void setIdBin(IdBin idBin) {
+        this.idBin = idBin;
+    }
+
+    public IpClass getIpclass() {
+        return Ipclass;
+    }
+
+    public void setIpclass(IpClass ipclass) {
+        Ipclass = ipclass;
+    }
+
+    public Broadcast getBroadcast() {
+        return broadcast;
+    }
+
+    public void setBroadcast(Broadcast broadcast) {
+        this.broadcast = broadcast;
+    }
+
+    public BroadcastBin getBroadcastBin() {
+        return broadcastBin;
+    }
+
+    public void setBroadcastBin(BroadcastBin broadcastBin) {
+        this.broadcastBin = broadcastBin;
+    }
+
+    public Cidr getCidr() {
+        return cidr;
+    }
+
+    public void setCidr(Cidr cidr) {
+        this.cidr = cidr;
+    }
 }
