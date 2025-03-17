@@ -5,6 +5,16 @@
     <title>IPedro</title>
 </head>
 <body>
+    <form method="post">
+        <label for="ip">Ip:</label>
+        <input id="ip" name="ip">
+        <label for="cidr">Cidr:</label>
+        <input id="cidr" name="cidr">
+        <input type="submit" value="Cadastrar">
+    </form>
+    <br>
+    <h4>Dados salvo:</h4>
     <p th:text="${adress.ip}"></p>
+    <p th:text="${adress.cidr}">/</p>
 </body>
 </html>
