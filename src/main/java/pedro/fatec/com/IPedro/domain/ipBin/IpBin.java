@@ -1,48 +1,48 @@
 package pedro.fatec.com.IPedro.domain.ipBin;
 
 public class IpBin {
-    private Integer FirstOct;
-    private Integer SecondOct;
-    private Integer ThirdOct;
-    private Integer FourOct;
+    private String FirstOct;
+    private String SecondOct;
+    private String ThirdOct;
+    private String FourOct;
 
 
     public IpBin(String binaryString, String binaryString1, String binaryString2, String binaryString3) {
-        FirstOct = Integer.valueOf(binaryString);
-        SecondOct = Integer.valueOf(binaryString1);
-        ThirdOct = Integer.valueOf(binaryString2);
-        FourOct = Integer.valueOf(binaryString3);
+        FirstOct = String.format("%8s", binaryString).replace(' ', '0');
+        SecondOct = String.format("%8s", binaryString1).replace(' ', '0');
+        ThirdOct = String.format("%8s", binaryString2).replace(' ', '0');
+        FourOct = String.format("%8s", binaryString3).replace(' ', '0');
     }
 
-    public Integer getFirstOct() {
+    public String getFirstOct() {
         return FirstOct;
     }
 
-    public void setFirstOct(Integer firstOct) {
+    public void setFirstOct(String firstOct) {
         FirstOct = firstOct;
     }
 
-    public Integer getSecondOct() {
+    public String getSecondOct() {
         return SecondOct;
     }
 
-    public void setSecondOct(Integer secondOct) {
+    public void setSecondOct(String secondOct) {
         SecondOct = secondOct;
     }
 
-    public Integer getThirdOct() {
+    public String getThirdOct() {
         return ThirdOct;
     }
 
-    public void setThirdOct(Integer thirdOct) {
+    public void setThirdOct(String thirdOct) {
         ThirdOct = thirdOct;
     }
 
-    public Integer getFourOct() {
+    public String getFourOct() {
         return FourOct;
     }
 
-    public void setFourOct(Integer fourOct) {
+    public void setFourOct(String fourOct) {
         FourOct = fourOct;
     }
 
