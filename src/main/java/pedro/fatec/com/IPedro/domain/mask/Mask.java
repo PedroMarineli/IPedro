@@ -7,23 +7,7 @@ public class Mask {
     private String FourOct;
 
     public Mask(String cidr) {
-        String buffer = "";
 
-        for (int i = 0; i < Integer.parseInt(cidr); i++) {
-            buffer = buffer.concat("1");
-        }
-
-        buffer = String.format("%32s", buffer).replace(' ', '0');
-
-        StringBuilder builder = new StringBuilder(buffer);
-        buffer = builder.reverse().toString();
-
-        System.out.println(buffer);
-
-        FirstOct = buffer.substring(0, 8);
-        SecondOct = buffer.substring(8, 16);
-        ThirdOct = buffer.substring(16, 24);
-        FourOct = buffer.substring(24, 32);
     }
 
     public String getFirstOct() {

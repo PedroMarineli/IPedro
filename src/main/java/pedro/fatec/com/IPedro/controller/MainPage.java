@@ -9,6 +9,7 @@ import pedro.fatec.com.IPedro.domain.cidr.Cidr;
 import pedro.fatec.com.IPedro.domain.ip.Ip;
 import pedro.fatec.com.IPedro.domain.ipBin.IpBin;
 import pedro.fatec.com.IPedro.domain.mask.Mask;
+import pedro.fatec.com.IPedro.domain.maskBin.MaskBin;
 
 import java.util.Arrays;
 
@@ -41,8 +42,8 @@ public class MainPage {
         IpBin ipBin = new IpBin(Integer.toBinaryString(ipFirst), Integer.toBinaryString(ipSecond), Integer.toBinaryString(ipThird), Integer.toBinaryString(ipFour));
         adress.setIpBin(ipBin);
 
-        Mask mask = new Mask(cidr);
-        adress.setMask(mask);
+        MaskBin maskBin = new MaskBin(cidr);
+        adress.setMaskBin(maskBin);
 
         return "redirect:";
     }
