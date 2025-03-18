@@ -25,12 +25,6 @@ public class Adress {
     private BroadcastBin broadcastBin;
     private Cidr cidr;
 
-
-    public Adress() {
-        Ip ip = new Ip(255, 255, 255, 255);
-        setIp(ip);
-    }
-
     public Ip getIp() {
         return ip;
     }
