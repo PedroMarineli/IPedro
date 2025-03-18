@@ -1,18 +1,18 @@
-package pedro.fatec.com.IPedro.domain.id;
+package pedro.fatec.com.IPedro.domain.inMask;
 
-import pedro.fatec.com.IPedro.domain.idBin.IdBin;
+import pedro.fatec.com.IPedro.domain.inMaskBin.InMaskBin;
 
-public class Id {
+public class InMask {
     private String FirstOct;
     private String SecondOct;
     private String ThirdOct;
     private String FourOct;
 
-    public Id(IdBin idBin) {
-        FirstOct = String.valueOf(Integer.parseInt(idBin.getFirstOct(), 2 ));
-        SecondOct = String.valueOf(Integer.parseInt(idBin.getSecondOct(), 2 ));
-        ThirdOct = String.valueOf(Integer.parseInt(idBin.getThirdOct(), 2 ));
-        FourOct = String.valueOf(Integer.parseInt(idBin.getFourOct(), 2 ));
+    public InMask(InMaskBin inMaskBin) {
+        FirstOct = String.valueOf(Integer.parseInt(inMaskBin.getFirstOct(), 2 ));
+        SecondOct = String.valueOf(Integer.parseInt(inMaskBin.getSecondOct(), 2 ));
+        ThirdOct = String.valueOf(Integer.parseInt(inMaskBin.getThirdOct(), 2 ));
+        FourOct = String.valueOf(Integer.parseInt(inMaskBin.getFourOct(), 2 ));
     }
 
     public String getFirstOct() {
@@ -49,7 +49,7 @@ public class Id {
 
     @Override
     public String toString() {
-        return "Id{" +
+        return "InMask{" +
                 "FirstOct='" + FirstOct + '\'' +
                 ", SecondOct='" + SecondOct + '\'' +
                 ", ThirdOct='" + ThirdOct + '\'' +

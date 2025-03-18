@@ -5,6 +5,7 @@ import pedro.fatec.com.IPedro.domain.broadcastBin.BroadcastBin;
 import pedro.fatec.com.IPedro.domain.cidr.Cidr;
 import pedro.fatec.com.IPedro.domain.id.Id;
 import pedro.fatec.com.IPedro.domain.idBin.IdBin;
+import pedro.fatec.com.IPedro.domain.inMask.InMask;
 import pedro.fatec.com.IPedro.domain.inMaskBin.InMaskBin;
 import pedro.fatec.com.IPedro.domain.ip.Ip;
 import pedro.fatec.com.IPedro.domain.ipBin.IpBin;
@@ -24,7 +25,15 @@ public class Adress {
     private Broadcast broadcast;
     private BroadcastBin broadcastBin;
     private Cidr cidr;
+    private InMask inMask;
 
+    public InMask getInMask() {
+        return inMask;
+    }
+
+    public void setInMask(InMask inMask) {
+        this.inMask = inMask;
+    }
 
     public Ip getIp() {
         return ip;

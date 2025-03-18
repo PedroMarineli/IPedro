@@ -10,7 +10,7 @@
         <input id="ip" name="ip">
         <label for="cidr">Cidr:</label>
         <input id="cidr" name="cidr">
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Enviar">
     </form>
     <br>
     <h4>Dados:</h4>
@@ -19,7 +19,10 @@
     <p th:text="${adress.ipBin}"></p>
     <p th:text="${adress.mask}"></p>
     <p th:text="${adress.maskBin}"></p>
+    <p th:text="${adress.inMask}"></p>
     <p th:text="${adress.inMaskBin}"></p>
+    <p th:text="${adress.id}"></p>
     <p th:text="${adress.idBin}"></p>
+    <p th:text="${adress.broadcastBin}"></p>
 </body>
 </html>

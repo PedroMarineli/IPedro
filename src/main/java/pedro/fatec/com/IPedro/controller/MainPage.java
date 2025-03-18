@@ -5,8 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import pedro.fatec.com.IPedro.domain.adress.Adress;
+import pedro.fatec.com.IPedro.domain.broadcastBin.BroadcastBin;
 import pedro.fatec.com.IPedro.domain.cidr.Cidr;
+import pedro.fatec.com.IPedro.domain.id.Id;
 import pedro.fatec.com.IPedro.domain.idBin.IdBin;
+import pedro.fatec.com.IPedro.domain.inMask.InMask;
 import pedro.fatec.com.IPedro.domain.inMaskBin.InMaskBin;
 import pedro.fatec.com.IPedro.domain.ip.Ip;
 import pedro.fatec.com.IPedro.domain.ipBin.IpBin;
@@ -53,8 +56,17 @@ public class MainPage {
         InMaskBin inMaskBin = new InMaskBin(mask);
         adress.setInMaskBin(inMaskBin);
 
+        InMask inMask = new InMask(inMaskBin);
+        adress.setInMask(inMask);
+
         IdBin idBin = new IdBin(mask, ipNew);
         adress.setIdBin(idBin);
+
+        Id id = new Id(idBin);
+        adress.setId(id);
+
+        BroadcastBin broadcastBin = new BroadcastBin();
+        adress.setBroadcastBin(broadcastBin);
 
         return "redirect:";
     }
