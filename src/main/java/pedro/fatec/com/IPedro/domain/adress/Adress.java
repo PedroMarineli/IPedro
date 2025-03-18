@@ -17,13 +17,14 @@ public class Adress {
     private IpBin ipBin;
     private Mask mask;
     private MaskBin maskBin;
-    private InMaskBin inMaskbin;
+    private InMaskBin inMaskBin;
     private Id id;
     private IdBin idBin;
     private IpClass Ipclass;
     private Broadcast broadcast;
     private BroadcastBin broadcastBin;
     private Cidr cidr;
+
 
     public Ip getIp() {
         return ip;
@@ -57,12 +58,12 @@ public class Adress {
         this.maskBin = maskBin;
     }
 
-    public InMaskBin getInMaskbin() {
-        return inMaskbin;
+    public InMaskBin getInMaskBin() {
+        return inMaskBin;
     }
 
-    public void setInMaskbin(InMaskBin inMaskbin) {
-        this.inMaskbin = inMaskbin;
+    public void setInMaskBin(InMaskBin inMaskBin) {
+        this.inMaskBin = inMaskBin;
     }
 
     public Id getId() {

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import pedro.fatec.com.IPedro.domain.adress.Adress;
 import pedro.fatec.com.IPedro.domain.cidr.Cidr;
+import pedro.fatec.com.IPedro.domain.inMaskBin.InMaskBin;
 import pedro.fatec.com.IPedro.domain.ip.Ip;
 import pedro.fatec.com.IPedro.domain.ipBin.IpBin;
 import pedro.fatec.com.IPedro.domain.mask.Mask;
@@ -47,6 +48,10 @@ public class MainPage {
 
         Mask mask = new Mask(maskBin);
         adress.setMask(mask);
+
+        InMaskBin inMaskBin = new InMaskBin(mask);
+        adress.setInMaskBin(inMaskBin);
+
         return "redirect:";
     }
 
