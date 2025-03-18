@@ -45,6 +45,8 @@ public class MainPage {
         MaskBin maskBin = new MaskBin(cidr);
         adress.setMaskBin(maskBin);
 
+        Mask mask = new Mask(maskBin);
+        adress.setMask(mask);
         return "redirect:";
     }
 

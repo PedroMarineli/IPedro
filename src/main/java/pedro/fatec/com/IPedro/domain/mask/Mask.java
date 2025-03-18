@@ -1,13 +1,18 @@
 package pedro.fatec.com.IPedro.domain.mask;
 
+import pedro.fatec.com.IPedro.domain.maskBin.MaskBin;
+
 public class Mask {
     private String FirstOct;
     private String SecondOct;
     private String ThirdOct;
     private String FourOct;
 
-    public Mask(String cidr) {
-
+    public Mask(MaskBin maskBin) {
+        FirstOct = String.valueOf(Integer.parseInt(maskBin.getFirstOct(), 2 ));
+        SecondOct = String.valueOf(Integer.parseInt(maskBin.getSecondOct(), 2 ));
+        ThirdOct = String.valueOf(Integer.parseInt(maskBin.getThirdOct(), 2 ));
+        FourOct = String.valueOf(Integer.parseInt(maskBin.getFourOct(), 2 ));
     }
 
     public String getFirstOct() {
