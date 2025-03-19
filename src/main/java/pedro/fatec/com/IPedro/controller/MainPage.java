@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import pedro.fatec.com.IPedro.domain.adress.Adress;
+import pedro.fatec.com.IPedro.domain.broadcast.Broadcast;
 import pedro.fatec.com.IPedro.domain.broadcastBin.BroadcastBin;
 import pedro.fatec.com.IPedro.domain.cidr.Cidr;
 import pedro.fatec.com.IPedro.domain.id.Id;
@@ -67,6 +68,9 @@ public class MainPage {
 
         BroadcastBin broadcastBin = new BroadcastBin(id, inMask);
         adress.setBroadcastBin(broadcastBin);
+
+        Broadcast broadcast = new Broadcast(broadcastBin);
+        adress.setBroadcast(broadcast);
 
         return "redirect:";
     }

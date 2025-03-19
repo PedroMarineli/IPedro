@@ -15,20 +15,20 @@ public class BroadcastBin {
         String buffer = Integer.toBinaryString(b | a);
         FirstOct = String.format("%8s", buffer).replace(' ', '0');
 
-        Integer a = Integer.valueOf(id.getFirstOct());
-        Integer b = Integer.valueOf(inMask.getFirstOct());
-        String buffer = Integer.toBinaryString(b | a);
-        FirstOct = String.format("%8s", buffer).replace(' ', '0');
+        a = Integer.valueOf(id.getSecondOct());
+        b = Integer.valueOf(inMask.getSecondOct());
+        buffer = Integer.toBinaryString(b | a);
+        SecondOct = String.format("%8s", buffer).replace(' ', '0');
 
-        Integer a = Integer.valueOf(id.getFirstOct());
-        Integer b = Integer.valueOf(inMask.getFirstOct());
-        String buffer = Integer.toBinaryString(b | a);
-        FirstOct = String.format("%8s", buffer).replace(' ', '0');
+        a = Integer.valueOf(id.getThirdOct());
+        b = Integer.valueOf(inMask.getThirdOct());
+        buffer = Integer.toBinaryString(b | a);
+        ThirdOct = String.format("%8s", buffer).replace(' ', '0');
 
-        Integer a = Integer.valueOf(id.getFirstOct());
-        Integer b = Integer.valueOf(inMask.getFirstOct());
-        String buffer = Integer.toBinaryString(b | a);
-        FirstOct = String.format("%8s", buffer).replace(' ', '0');
+        a = Integer.valueOf(id.getFourOct());
+        b = Integer.valueOf(inMask.getFourOct());
+        buffer = Integer.toBinaryString(b | a);
+        FourOct = String.format("%8s", buffer).replace(' ', '0');
     }
 
 
