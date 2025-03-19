@@ -65,7 +65,7 @@ public class MainPage {
         Id id = new Id(idBin);
         adress.setId(id);
 
-        BroadcastBin broadcastBin = new BroadcastBin();
+        BroadcastBin broadcastBin = new BroadcastBin(id, inMask);
         adress.setBroadcastBin(broadcastBin);
 
         return "redirect:";
