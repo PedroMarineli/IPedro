@@ -63,6 +63,6 @@ public class IdBin {
 
     @Override
     public String toString() {
-        return "IdBin: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return "Id Binário: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

@@ -61,6 +61,6 @@ public class InMaskBin {
 
     @Override
     public String toString() {
-        return "InMaskBin: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return "Máscara Invertida Binária: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

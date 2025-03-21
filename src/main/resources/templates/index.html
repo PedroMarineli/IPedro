@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="ptbr">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <title>IPedro</title>
 </head>
-<body>
-    <form method="post">
-        <label for="ip">Ip:</label>
-        <input id="ip" name="ip" style="border: 2px solid black;">
-        <label for="cidr">Cidr:</label>
-        <input id="cidr" name="cidr" style="border: 2px solid black;">
-        <input type="submit" value="Enviar" style="border: 2px solid black;">
-    </form>
-    <br>
-    <h4>Dados:</h4>
-    <p th:text="${adress.ip}"></p>
-    <p th:text="${adress.cidr}"></p>
-    <p th:text="${adress.ipBin}"></p>
-    <p th:text="${adress.mask}"></p>
-    <p th:text="${adress.maskBin}"></p>
-    <p th:text="${adress.inMask}"></p>
-    <p th:text="${adress.inMaskBin}"></p>
-    <p th:text="${adress.id}"></p>
-    <p th:text="${adress.idBin}"></p>
-    <p th:text="${adress.broadcast}"></p>
-    <p th:text="${adress.broadcastBin}"></p>
+<body class="space-y-4 flex flex-col items-center bg-[#F0F8FF] h-screen justify-center font-roboto">
+    <div class="flex flex-col items-center font-playfair text-3xl text-[#333366]">
+        <h1>Seu Parceiro em Configurações de Rede</h1>
+        <h2 class="font-roboto text-lg">Descubra mais informações sobre seu endereço na internet!</h2>
+    </div>
+    <div class="flex flex-col items-center text-[#333366]">
+        <form method="post">
+            <label for="ip"></label>
+            <input id="ip" name="ip" placeholder="Endereço IP" class="shadow-md focus:shadow-lg text-center border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none rounded-lg p-2">
+            <label for="cidr"></label>
+            <input id="cidr" name="cidr" placeholder="CIDR" class="shadow-md focus:shadow-lg text-center border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none rounded-lg p-2">
+            <input type="submit" value="Enviar" class="cursor-pointer hover:shadow-xl bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+        </form>
+    </div>
+    <div class="flex flex-col items-center font-mono text-[#708090]">
+        <h4>Dados:</h4>
+        <p th:text="${adress.ip}"></p>
+        <p th:text="${adress.cidr}"></p>
+        <p th:text="${adress.ipBin}"></p>
+        <p th:text="${adress.mask}"></p>
+        <p th:text="${adress.maskBin}"></p>
+        <p th:text="${adress.inMask}"></p>
+        <p th:text="${adress.inMaskBin}"></p>
+        <p th:text="${adress.id}"></p>
+        <p th:text="${adress.idBin}"></p>
+        <p th:text="${adress.broadcast}"></p>
+        <p th:text="${adress.broadcastBin}"></p>
+    </div>
 </body>
 </html>

@@ -49,6 +49,6 @@ public class InMask {
 
     @Override
     public String toString() {
-        return "InMask: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return "Máscara Invertida: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

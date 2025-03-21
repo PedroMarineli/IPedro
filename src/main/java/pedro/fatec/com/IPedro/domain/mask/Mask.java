@@ -49,6 +49,6 @@ public class Mask {
 
     @Override
     public String toString() {
-        return "Mask: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return "Máscara: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }
