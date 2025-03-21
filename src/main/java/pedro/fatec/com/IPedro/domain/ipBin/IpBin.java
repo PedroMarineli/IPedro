@@ -48,11 +48,6 @@ public class IpBin {
 
     @Override
     public String toString() {
-        return "IpBin{" +
-                "FirstOct=" + FirstOct +
-                ", SecondOct=" + SecondOct +
-                ", ThirdOct=" + ThirdOct +
-                ", FourOct=" + FourOct +
-                '}';
+        return "IpBin: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

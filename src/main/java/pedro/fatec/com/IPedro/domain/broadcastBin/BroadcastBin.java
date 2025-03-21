@@ -66,11 +66,6 @@ public class BroadcastBin {
 
     @Override
     public String toString() {
-        return "BroadcastBin{" +
-                "FirstOct='" + FirstOct + '\'' +
-                ", SecondOct='" + SecondOct + '\'' +
-                ", ThirdOct='" + ThirdOct + '\'' +
-                ", FourOct='" + FourOct + '\'' +
-                '}';
+        return "Broadcast Binário: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

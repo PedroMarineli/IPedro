@@ -49,11 +49,6 @@ public class InMask {
 
     @Override
     public String toString() {
-        return "InMask{" +
-                "FirstOct='" + FirstOct + '\'' +
-                ", SecondOct='" + SecondOct + '\'' +
-                ", ThirdOct='" + ThirdOct + '\'' +
-                ", FourOct='" + FourOct + '\'' +
-                '}';
+        return "InMask: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

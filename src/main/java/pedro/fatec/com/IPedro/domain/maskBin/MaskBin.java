@@ -58,11 +58,6 @@ public class MaskBin {
 
     @Override
     public String toString() {
-        return "MaskBin{" +
-                "FirstOct='" + FirstOct + '\'' +
-                ", SecondOct='" + SecondOct + '\'' +
-                ", ThirdOct='" + ThirdOct + '\'' +
-                ", FourOct='" + FourOct + '\'' +
-                '}';
+        return "MaskBin: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

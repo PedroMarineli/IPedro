@@ -63,11 +63,6 @@ public class IdBin {
 
     @Override
     public String toString() {
-        return "IdBin{" +
-                "FirstOct='" + FirstOct + '\'' +
-                ", SecondOct='" + SecondOct + '\'' +
-                ", ThirdOct='" + ThirdOct + '\'' +
-                ", FourOct='" + FourOct + '\'' +
-                '}';
+        return "IdBin: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

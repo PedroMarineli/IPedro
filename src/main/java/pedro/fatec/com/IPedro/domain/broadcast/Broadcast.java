@@ -50,11 +50,6 @@ public class Broadcast {
 
     @Override
     public String toString() {
-        return "Broadcast{" +
-                "FirstOct='" + FirstOct + '\'' +
-                ", SecondOct='" + SecondOct + '\'' +
-                ", ThirdOct='" + ThirdOct + '\'' +
-                ", FourOct='" + FourOct + '\'' +
-                '}';
+        return "Broadcast: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

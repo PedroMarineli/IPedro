@@ -17,8 +17,6 @@ public class Cidr {
 
     @Override
     public String toString() {
-        return "Cidr{" +
-                "value=" + value +
-                '}';
+        return "CIDR: " + value;
     }
 }
