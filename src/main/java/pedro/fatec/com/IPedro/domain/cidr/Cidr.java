@@ -17,6 +17,6 @@ public class Cidr {
 
     @Override
     public String toString() {
-        return "CIDR: " + value;
+        return String.valueOf(value);
     }
 }

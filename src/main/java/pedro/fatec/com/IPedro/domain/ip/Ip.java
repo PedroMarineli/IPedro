@@ -15,7 +15,7 @@ public class Ip {
 
     @Override
     public String toString() {
-        return "Ip: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 
     public Integer getFirstOct() {

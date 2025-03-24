@@ -49,6 +49,6 @@ public class Id {
 
     @Override
     public String toString() {
-        return "Id: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

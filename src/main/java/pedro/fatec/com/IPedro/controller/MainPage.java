@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import pedro.fatec.com.IPedro.domain.adress.Adress;
 import pedro.fatec.com.IPedro.domain.broadcast.Broadcast;
 import pedro.fatec.com.IPedro.domain.broadcastBin.BroadcastBin;
@@ -17,20 +18,21 @@ import pedro.fatec.com.IPedro.domain.ipBin.IpBin;
 import pedro.fatec.com.IPedro.domain.mask.Mask;
 import pedro.fatec.com.IPedro.domain.maskBin.MaskBin;
 
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class MainPage {
     Adress adress = new Adress();
 
     @GetMapping
-    public String index(Model model){
-        model.addAttribute("adress", adress);
+    public String index(){
         return "index";
     }
 
-    @PostMapping
-    public String saveIp(String ip, String cidr){
+    @PostMapping("/save")
+    @ResponseBody
+    public Map<String, Object> saveIp(String ip, String cidr){
 
         String [] octs = ip.split("\\.");
 
@@ -72,10 +74,20 @@ public class MainPage {
         Broadcast broadcast = new Broadcast(broadcastBin);
         adress.setBroadcast(broadcast);
 
-        return "redirect:";
+        Map<String, Object> response = new HashMap<>();
+        response.put("ip", ipNew.toString());
+        response.put("cidr", cidrNew.toString());
+        response.put("ipBin", ipBin.toString());
+        response.put("maskBin", maskBin.toString());
+        response.put("mask", mask.toString());
+        response.put("inMaskBin", inMaskBin.toString());
+        response.put("inMask", inMask.toString());
+        response.put("idBin", idBin.toString());
+        response.put("id", id.toString());
+        response.put("broadcastBin", broadcastBin.toString());
+        response.put("broadcast", broadcast.toString());
+
+        return response;
     }
-
-
-
 
 }

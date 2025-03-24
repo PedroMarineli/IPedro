@@ -58,6 +58,6 @@ public class MaskBin {
 
     @Override
     public String toString() {
-        return "Máscara Binária: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }

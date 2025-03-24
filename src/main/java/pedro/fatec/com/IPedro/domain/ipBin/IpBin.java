@@ -48,6 +48,6 @@ public class IpBin {
 
     @Override
     public String toString() {
-        return "Ip Binária: " + FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
+        return FirstOct + "." + SecondOct + "." + ThirdOct + "." + FourOct;
     }
 }
